@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" style="display: flex;">
+<head>
+  <meta charset="UTF-8"> <!-- Define a codificação de caracteres para o documento -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Define a largura da viewport e a escala inicial -->
+  <title>Máscaras com JavaScript</title>
+  <!-- Importa a biblioteca jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5xULK0UvzUaxL/RUvLzU7K5JAk[]Xm5H5Nvvt8W5GT8" crossorigin="anonymous"></script>
+  <!-- Importa a biblioteca jquery.mask para aplicar as máscaras nos campos de texto -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js" integrity="sha512-pHVGpX7F/27yZ0ISY+VVjyULNaN5M5+5NktO7R/m7Yw6AvzBI6yfipeJ6Kj3qUz6X[]CZJ5U6p1v6KMwWl+2OyQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <style>
+    html, body {
+      height: 100%; /* Define a altura dos elementos html e body como 100% */
+      margin: 0; /* Remove a margem dos elementos html e body */
+    }
+    html {
+      display: flex; /* Define o display do elemento html como flex para centralizar o conteúdo */
+    }
+    body {
+      background: linear-gradient(180deg, #1e90ff, #00bfff); /* Aplica um gradiente linear como plano de fundo do body */
+      background-size: 100% 100%; /* Define o tamanho do plano de fundo para cobrir toda a área do body */
+      display: flex; /* Define o display do elemento body como flex para centralizar o conteúdo */
+      justify-content: center; /* Centraliza o conteúdo horizontalmente */
+      align-items: center; /* Centraliza o conteúdo verticalmente */
+      width: 100%; /* Define a largura do body como 100% */
+    }
+    .input-container {
+      display: flex; /* Define o display do elemento .input-container como flex */
+      flex-direction: column; /* Define a direção dos elementos flex como coluna */
+      gap: 20px; /* Define o espaço entre os elementos dentro do .input-container */
+      align-items: center; /* Centraliza os elementos horizontalmente dentro do .input-container */
+      width: 100%; /* Define a largura do .input-container como 100% */
+    }
+    
+    input[type="text"] {
+  /* Define a largura dos campos de texto como 80% da largura do contêiner pai */
+  width: 80%;
+  /* Define a largura máxima dos campos de texto como 400 pixels */
+  max-width: 400px;
+  /* Define a caixa de modelo como "border-box", que inclui as bordas e o preenchimento dentro da largura e altura total do elemento */
+  box-sizing: border-box;
+  /* Define o preenchimento do campo de texto como 8 pixels no topo e inferior e 12 pixels nas laterais */
+  padding: 8px 12px;
+  /* Define o tamanho da fonte do texto dentro do campo como 16 pixels */
+  font-size: 16px;
+  /* Define a altura da linha do texto dentro do campo como 1,5 vezes o tamanho da fonte */
+  line-height: 1.5;
+  /* Define a cor do texto dentro do campo como um cinza escuro */
+  color: #495057;
+  /* Define a cor de fundo do campo como branco */
+  background-color: #ffffff;
+  /* Define a área de plano de fundo como a caixa de preenchimento do elemento */
+  background-clip: padding-box;
+  /* Define a borda do campo como 1 pixel de largura, sólida e de cor cinza claro */
+  border: 1px solid #ced4da;
+  /* Define o raio dos cantos da borda como 4 pixels */
+  border-radius: 4px;
+  /* Define a transição de propriedades CSS para a borda e a sombra do campo */
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+input[type="text"]:focus {
+  /* Define a cor do texto dentro do campo quando ele recebe foco como um cinza escuro */
+  color: #495057;
+  /* Define a cor de fundo do campo quando ele recebe foco como branco */
+  background-color: #fff;
+  /* Define a cor da borda do campo quando ele recebe foco como um azul claro */
+  border-color: #80bdff;
+  /* Remove o contorno padrão que aparece quando um campo de texto recebe foco */
+  outline: 0;
+  /* Adiciona uma sombra ao redor do campo quando ele recebe foco */
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+  </style>
+</head>
+<body>
+  <div class="input-container"> <!-- Contêiner dos campos de texto -->
+    
+    <input type="text" id="cpf" placeholder="CPF"> <!-- Campo de texto para CPF -->
+    <input type="text" id="telefone" placeholder="Telefone"> <!-- Campo de texto para Telefone -->
+    <input type="text" id="cep" placeholder="CEP"> <!-- Campo de texto para CEP -->
+    <input type="text" id="data" placeholder="Data"> <!-- Campo de texto para Data -->
+    <input type="text" id="cnpj" placeholder="CNPJ"> <!-- Campo de texto para CNPJ -->
+  </div>
+  <script>
+    $(document).ready(function(){
+      $('#cpf').mask('000.000.000-00', {reverse: true}); // Aplica máscara de CPF ao campo #cpf
+      $('#telefone').mask('(00) 00000-0000'); // Aplica máscara de telefone ao campo #telefone
+      $('#cep').mask('00000-000'); // Aplica máscara de CEP ao campo #cep
+      $('#data').mask('00/00/0000'); // Aplica máscara de data ao campo #data
+      $('#cnpj').mask('00.000.000/0000-00'); // Aplica máscara de CNPJ ao campo #cnpj
+    });
+  </script>
+</body>
+</html>
