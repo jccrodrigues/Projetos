@@ -27,6 +27,5 @@ Tecnologias que utilizo atualmente:
 
 ## Meu Site
 
-<p align="center">
-  <a href="https://tonestecnologias.com.br/index.html">Tones Tecnologias</a>
-</p>
+<a href="https://tonestecnologias.com.br/index.html">Criador e Proprietário: Tones Tecnologias</a>
+
