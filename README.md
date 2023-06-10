@@ -25,7 +25,7 @@ Tecnologias que utilizo atualmente:
 - Figma
 - Bootstrap Studio
 
-## Meu Site
+## Meu Site (Criador e Proprietário)
 
-<a href="https://tonestecnologias.com.br/index.html">Criador e Proprietário: Tones Tecnologias</a>
+<a href="https://tonestecnologias.com.br/index.html">Tones Tecnologias</a>
 
