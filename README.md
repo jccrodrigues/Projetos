@@ -7,12 +7,6 @@ Olá! Bem-vindo(a) à minha página de projetos no GitHub. Aqui você encontrar�
 
 </p>
 
-<p align="center">
-  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#memo-licença">Licença</a>
-</p>
 
 <p align="center">
   <img alt="License" src="https://tonestecnologias.com.br/assets/img/office-g78df4e0e1_1280.jpg">
@@ -20,9 +14,6 @@ Olá! Bem-vindo(a) à minha página de projetos no GitHub. Aqui você encontrar�
 
 <br>
 
-<p align="center">
-  <img alt="projeto DevLinks" src=".github/preview.jpg" width="100%">
-</p>
 
 ## 🚀 Tecnologias
 
