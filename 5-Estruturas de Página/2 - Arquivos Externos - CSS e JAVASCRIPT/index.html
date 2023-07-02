@@ -6,11 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <!-- Arquivo para chamar arquivo css externo - Ele sempre tem de estar abaixo da tag <title>-->
+    <!-- Arquivo para chamar arquivo css externo-->
     <link rel="stylesheet" type="text/css" href="css/estilo.css"/>
 
-    <!--Código para chamar arquivo javascript externo - Pode deixar o arquivo de chamada dentro da tag <head>-->
-    <script type="text/javascript" src="js/info.js"></script>
+    <!--Código para chamar arquivo javascript externo-->
+
+    <!--defer serve para chamar o arquivo javascript depois que todo o código html estiver todo carregado, 
+    isso serve para evitar erros, dependendo do contexto de funcionamento do código-->
+    
+    <script type="text/javascript" src="js/info.js" defer></script>
 
 </head>
 <body>
