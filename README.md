@@ -24,6 +24,7 @@ Tecnologias que utilizo atualmente:
 - Git e Github
 - Figma
 - Bootstrap Studio
+- React
 
 ## Meu Site (Criador e Proprietário)
 
